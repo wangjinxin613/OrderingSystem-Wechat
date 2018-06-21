@@ -1,0 +1,123 @@
+.index-bg{
+	background:url(images/bg.png);
+	width:100%;
+	height:158px;
+	margin-top: :0;
+	padding: 20px 0;
+	margin-top: -20px;	
+
+}
+.card{
+	background: url(images/card.jpg);
+	width:80%;
+	margin-left:10%;
+	height: 200px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+	margin-top:30PX;
+	border-radius: 10px;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+.card .p1{
+	padding:20px 20px;
+	
+	font-weight: 500;
+}
+.card .p2{
+	letter-spacing:1px;
+	padding:40px 30px 0 0;
+	text-align: right;
+}
+.card .p3{
+text-align: right;
+	padding: 2px 30px;
+	letter-spacing:2px;
+	font-size: 16px;
+}
+.list{
+	
+	border-top:1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	padding:10px 0 10px 0;
+	background: #FFFFFF;
+}
+.list p{
+	
+	
+}
+.list-logo{
+	float: left;
+	width:24.5%;
+	text-align: center;
+	
+}
+.rightborder{
+	border-left:1px solid #eeeeee;
+}
+.list-logo p{
+
+}
+.list-logo .p1{
+	font-size: 14px;
+	color: #666666;
+}
+.list-logo .p2{
+	font-size:12px;
+	
+	color:#FF6600;
+}
+.list-box{
+	background:#ffffff;
+	padding:10px 15px;
+	
+	border-top:1px solid #eeeeee;
+	
+}
+.list-box span{
+	color: #666666;
+	float: right;
+}
+.border-bottom{
+	border-bottom: 1px solid #eeeeee;
+}
+.margin{
+	margin-top:8px;
+	border-bottom: 1px solid #eeeeee;
+}
+/* 功能菜单 */
+.gncd{
+margin:20px 0;
+font-size:12px;
+
+border-top:1px solid #eeeeee;
+}
+.gncd img{
+	width:28px;
+	height:28px;
+}
+.gncd-logo{
+	float:left;
+	padding:10px 0px;
+
+	text-align: center;
+	background:#ffffff;
+	width:24.75%;
+	border-bottom: 1px solid #eeeeee;
+	border-right:1px solid #eeeeee;
+		
+}
+.noborder-r{
+	
+	border-right:0px solid #eeeeee;
+}
+.btn-jihuo{
+	width:90%;
+	padding:10px 0;
+	background:#CC3333;
+	text-align: center;
+	color: #FFFFFF;
+	margin:10px auto;
+	border-radius: 5px;
+}

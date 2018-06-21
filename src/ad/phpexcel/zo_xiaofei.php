@@ -1,0 +1,116 @@
+<?php
+	
+	require_once("../config/conn.php");
+	require_once("Classes/PHPExcel.php");
+	include("Classes/PHPExcel/IOFactory.php"); 
+	
+	header("Content-Type: text/html; charset=utf8");
+	$type = $_GET['type'];
+	$time = $_GET['time'];
+	error_reporting(0);
+	//$id=$_GET["id"];
+	
+	
+	//创建一个excel对象
+	$objPHPExcel = new PHPExcel();
+
+	// Set properties  设置文件属性
+	$objPHPExcel->getProperties()->setCreator("ctos")
+        ->setLastModifiedBy("ctos")
+        ->setTitle("Office 2007 XLSX Test Document")
+        ->setSubject("Office 2007 XLSX Test Document")
+        ->setDescription("Test document for Office 2007 XLSX, generated using PHP classes.")
+        ->setKeywords("office 2007 openxml php")
+        ->setCategory("Test result file");
+
+	//set width  设置表格宽度
+	$objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(8);
+	$objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(8);
+	$objPHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(15);
+	$objPHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(15);
+	$objPHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(15);
+	$objPHPExcel->getActiveSheet()->getColumnDimension('F')->setWidth(20);
+	$objPHPExcel->getActiveSheet()->getColumnDimension('G')->setWidth(10);
+	
+	
+	
+
+	//设置水平居中  
+	$objPHPExcel->getActiveSheet()->getStyle('A')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+	$objPHPExcel->getActiveSheet()->getStyle('B')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+	$objPHPExcel->getActiveSheet()->getStyle('C')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+	$objPHPExcel->getActiveSheet()->getStyle('D')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+	$objPHPExcel->getActiveSheet()->getStyle('E')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+	$objPHPExcel->getActiveSheet()->getStyle('F')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+	$objPHPExcel->getActiveSheet()->getStyle('G')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+	
+	
+		
+	// set table header content  设置表头名称 
+	$objPHPExcel->setActiveSheetIndex(0)
+        ->setCellValue('A1', 'uid')
+        ->setCellValue('B1', 'username')
+        ->setCellValue('C1', 'money_change')
+        ->setCellValue('D1', 'get_points')
+        ->setCellValue('E1', 'type')
+        ->setCellValue('F1', 'time')
+        ->setCellValue('G1', 'storename');
+        
+$rownum=1;
+	if($type == 1){
+     $today= date("Y/m/d");
+   }else if($type==2){
+     $today= date("Y/m/d",strtotime("-1 weeks"));
+   }else if($type==3){
+     $today= date("Y/m/d",strtotime("-1 months"));
+   }else if($type==4){
+     $today= date("Y/m/d",strtotime("-1 years"));
+   }
+   $zhou=strtotime($today);//获取当前时间
+require('../config/index_class1.php');
+   $sql="select * from money_change";//查询语句
+
+   $res=mysql_query($sql);//执行查询
+   while($r=mysql_fetch_assoc($res)){
+       $ro[]=$r;//接受结果集
+   }
+   foreach($ro as $key=>$v){
+     if(strtotime($v['time']) > $zhou){
+			
+		$rownum++;
+		$account_id = $v["uid"];
+		$wx_nickname =  member_info($v['uid'],"3");
+		$wx_sex = $v["m_body"];
+		$ordertype =$v['get_points'];		
+		$points=$v["type"];
+		$tel =$v["time"];
+		$store_name = store_name_select($v['store_id'],'1');
+			
+		$objPHPExcel->getActiveSheet()->setCellValue('A' . $rownum, $account_id);  
+		$objPHPExcel->getActiveSheet()->setCellValue('B' . $rownum, $wx_nickname);
+		$objPHPExcel->getActiveSheet()->setCellValue('C' . $rownum, $wx_sex);	
+		$objPHPExcel->getActiveSheet()->setCellValue('D' . $rownum, $ordertype);	
+		$objPHPExcel->getActiveSheet()->setCellValue('E' . $rownum, $points);	
+		$objPHPExcel->getActiveSheet()->setCellValue('F' . $rownum, $tel);	
+		$objPHPExcel->getActiveSheet()->setCellValue('G' . $rownum, $store_name);
+	}
+
+	}
+	
+	$objPHPExcel->getActiveSheet()->setTitle('Simple');
+
+
+	// Set active sheet index to the first sheet, so Excel opens this as the first sheet
+	$objPHPExcel->setActiveSheetIndex(0);
+
+	//	$filename="销售订单".date('Y-m-d');
+	// Redirect output to a client’s web browser (Excel5)
+//	ob_end_clean();//清除缓冲区,避免乱码
+	header('Content-Type: application/vnd.ms-excel');
+	//	header('Content-Disposition: attachment;filename='.$filename);
+	header('Content-Disposition: attachment;filename="消费明细表.xls"');
+
+	$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+	$objWriter->save('php://output');
+	exit;
+?>

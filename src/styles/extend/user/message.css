@@ -1,0 +1,19 @@
+.shou .p1{
+	padding: 10px 15px;
+	margin-top:10px;	
+	color: #666666;
+}
+.shou{
+	background: #ffffff;
+}
+.shou .p2{
+	padding: 8px 15px 8px 0;
+	border-bottom: 1px solid #eeeeee;
+	margin:0 0px 0 15px;
+
+}
+
+.shou span{
+	float: right;
+	color: #999999;
+}

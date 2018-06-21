@@ -1,0 +1,25 @@
+.pinglun{
+	padding-top:50px;
+	width:100%;
+}
+.pinglun textarea{
+	width:100%;
+	height:120px;
+	border:1px solid #eeeeee;
+	outline: none;
+	border-left:0;
+	border-right:0;
+	font-size: 15px;
+	padding:10px 10px;
+}
+.btn{
+	width:90%;
+	margin-left:5%;
+	background: #FF0033;
+	padding:10px 0;
+	border:0;
+	outline: none;
+	color: #ffffff;
+	border-radius: 5px;
+	margin-top:15px;
+}

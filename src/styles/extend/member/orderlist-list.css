@@ -1,0 +1,40 @@
+.title{
+	background:#ffffff;
+
+}
+.title li{
+	float: left;
+	list-style-type: none;
+	padding:10px 0px;
+	width:25%;
+	text-align: center;
+	background: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+}
+.title .active{
+	border-bottom: 1px solid #FF6600;
+}
+.list{
+	background: #ffffff;
+	margin:10px 0;
+	border-top:1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	padding:0px 10px;
+}
+.list .p1{
+	color:#999999;
+	border-bottom: 2px dotted #eeeeee;
+	padding:8px 0;
+}
+.list .p2{
+	padding:8px 0;
+	font-size:16px;
+}
+.list input{
+	border:1px solid #FF6600;
+	background: #ffffff;
+	color: #FF6600;
+	float: right;
+	padding:5px 10px;
+	border-radius: 5px;
+}

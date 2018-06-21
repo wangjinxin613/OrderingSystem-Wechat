@@ -1,0 +1,85 @@
+.name{
+	padding:5px 10px;
+	background:#ffffff;
+
+	border-bottom: 1px solid #eeeeee;
+}
+.name-left{
+	float: left;
+}
+.name-left	.p1{
+	font-size: 18px;
+}
+.name-left .p2{
+	color: #FF6666;
+	font-weight: 800;
+	font-size: 16px;
+
+}
+.name-left img{
+	width:13px;
+}
+.name-left .p3,.a1{
+	font-size:12px;
+	color:#FF6600;
+}
+.name-right{
+	float: right;
+	
+}
+.name-right	img{
+	padding:5px 1px 0 0;
+	width:65px;
+	border-radius: 10px;
+	height: 65px;
+}
+.yuding{
+
+	background:#ffffff;
+	border-bottom: 1px solid #eeeeee;
+	
+
+}
+.yuding-left{
+	border-right:1px solid #eeeeee;
+	width: 50%;
+float: left;
+	text-align: center;
+	padding:10px 0px;
+}
+.yuding-right{
+	
+	width: 49%;
+	float: left;
+	padding:10px 0px;
+	text-align: center;
+
+}
+.yuding .a1{
+	padding:6px 6px 5px 7px;
+	background:#FF6600;
+	color:#ffffff;
+	border-radius: 20px;
+}
+.yuding span{
+	margin-left:10px;
+}
+.box{
+	padding:8px 15px;
+	border-bottom: 1px solid #eeeeee;
+	background: #ffffff;
+}
+.box span{
+	float: right;
+	color: #666666;
+}
+.box1{
+	color: #666666;
+}
+.ping{
+	line-height: 30px;
+	font-size: 13px;
+}
+.ping .p1{
+	color: #FF6600;
+}

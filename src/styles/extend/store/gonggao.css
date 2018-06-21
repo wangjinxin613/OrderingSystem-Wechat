@@ -1,0 +1,17 @@
+.gg-title .p1{
+	padding: 10px 20px;
+	font-size: 16px;
+}
+.gg-title .p2{
+	padding:10px 15px 0px 15px;
+	font-size: 14px;
+
+}
+.gg-body{
+	background: #ffffff;
+}
+.gg-body .p3{
+	float: right;
+	color: #666666;
+	padding: 10px 15px;
+}

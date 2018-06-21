@@ -1,0 +1,246 @@
+@charset "UTF-8";
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    -webkit-appearance: none; /*苹果和安卓按钮样式*/
+}
+body {
+    font-family: "Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
+    margin : 0 auto;
+    position: relative;
+}
+img {
+    width: 100%;
+}
+/*灰影清除*/
+a,button,input,textarea,img {
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+header,section,footer{
+    display: block;
+}
+.up{
+    position: absolute;
+    z-index: 999;
+    top: 2rem;
+    left: 4%;
+}
+.up img{
+    width: 40px;
+    opacity: 0.5;
+}
+.share{
+    position: absolute;
+    z-index: 999;
+    top: 2rem;
+    right: 4%;
+}
+.share img{
+    width: 40px;
+    opacity: 0.5;
+}
+.container{
+    max-width: 640px;
+    margin: 0 auto;
+}
+.t_container{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.p_service{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: darkgray;
+}
+.p_service span{
+    color: dodgerblue;
+    font-size: 1.4rem;
+}
+.p_detail{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    text-indent: -1rem;
+}
+.bg_hg{
+    margin-top: 1rem;
+    background-image: url('../img/hg.png');
+    background-size: 160px 30px ;
+    width: 160px;
+    height: 30px;
+    position: relative;
+}
+.new{
+    position: absolute;
+    font-size: 1.8rem;
+    color: white;
+    top:5%;
+    left:7%;
+}
+.new span{
+    font-size: 1.4rem;
+}
+.old{
+    position: absolute;
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: white;
+    top:30%;
+    right:4%;
+}
+.p_count{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #FFAD86;
+    width: 12rem;
+    border: 1px solid  #FFAD86;
+    border-radius: 2px;
+}
+.p_time{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color:dodgerblue;
+}
+.p_time span{
+    font-size: 1.4rem;
+    color: darkgray;
+}
+.p_address{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: darkgray;
+}
+.p_phone{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: darkgray;
+}
+.p_phone span{
+    font-size: small;
+}
+.t_warn{
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 1rem;
+    background-image: url("../img/tishi.png");
+    max-width: 640px;
+    height: 120px;
+}
+.p_warn{
+    padding-top: 1rem;
+    color: red;
+    font-size: 1.4rem;
+}
+.p_payoff{
+    padding-top: 0.5rem;
+    color: red;
+    font-size: 1.4rem;
+}
+.t_remark {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.p_remark{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gainsboro;
+}
+.p_text{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: darkgray;
+    line-height: 1.6rem;
+}
+.footer{
+    height: 8rem;
+    background-color: gainsboro;
+    text-align:center ;
+}
+.footer p {
+    color: darkgray;
+    font-size: 1.4rem;
+}
+.wx_nav a:before{
+    background-image:url("../img/opcity.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav{
+    overflow:hidden;
+    height:48px;
+    border-top:1px solid #ddd;
+    position:fixed;
+    z-index:900;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+.wx_nav a{
+    width:200px;
+    height:49px;
+    color:#999;
+    font-size:12px;
+    background-color:white;
+    text-align:center;
+}
+.wx_nav a:before{
+    width:30px;
+    height:20px;
+    content:'\20';
+    display:block;
+    margin:5px auto 2px auto;
+}
+.wx_nav a:active{
+    background-color:whitesmoke;
+    color:lightseagreen;
+}
+.wx_nav a:active,.wx_nav a.nav_fav{
+    color:lightseagreen;
+}
+.wx_nav a:active:before,.wx_nav a.nav_fav:before{
+    background-image:url("../img/greenicon.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav .nav_index:before{
+    background-position: 5px 0;
+}
+.wx_nav .nav_fav:before{
+    background-position: -103px 0;
+}
+.wx_nav .nav_shopcart:before{
+    background-position: -212px 0;
+}
+.wx_nav .nav_me:before{
+    background-position: -315px 0;
+}
+.wx_nav{
+    display:box;
+    display:-ms-box;
+    display:-webkit-box;
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}
+.wx_nav a{
+    display:block;
+    flex:1;
+    -ms-flex:1;
+    -webkit-flex:1;
+    box-flex:1;
+    -ms-box-flex:1;
+    -webkit-box-flex:1;
+}

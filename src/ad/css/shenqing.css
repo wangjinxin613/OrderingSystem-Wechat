@@ -1,0 +1,40 @@
+.sq_box{
+  width:80%;
+  margin:100px auto;
+  height: auto;
+  padding-bottom: 50px;
+  background:#ffffff;
+  border-radius:5px;
+}
+.sq_box h2{
+  padding: 40px 0;
+  text-align: center;
+}
+.sq_label{
+  text-align: center;
+
+}
+.sq_label label{
+  font-size: 20px;
+  color:#666666;
+  margin:15px 0;
+}
+.sq_label input{
+  font-size:16PX;
+  padding: 10px 10px;
+  margin-left:50px;
+  width: 480px;
+
+  border-radius: 5px!important;
+  
+}
+.shen{
+  width:300px;
+  border:0;
+  padding:10px 0;
+  color:#FFFFFF;
+  margin-top: 50px;
+  outline: none;
+  background:#FF6666;
+  border-radius: 8px;
+}

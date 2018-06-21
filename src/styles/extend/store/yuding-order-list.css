@@ -1,0 +1,39 @@
+.type{
+	padding:10px 15px;
+	color: #999999;
+}
+.xx input{
+	outline: none;
+border: 0;
+	margin-left:10px;
+	width: 80%;
+ 
+}
+.paytype{
+
+	background: #ffffff;
+	font-size:12px;
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+}
+.paytype-logo{
+	padding:10px 10px;
+	text-align: center;
+	width: 23%;
+	border-right:1px solid #eeeeee;
+	float: left;
+}
+.paytype-logo p{
+	text-align: center;
+}
+.btn{
+	padding:10px 0;
+	width:90%;
+	border-radius: 5px;
+	margin:20px 5%;
+	border:0;
+	text-align: center;
+	color: #ffffff;
+	background: #FF0033;
+
+}

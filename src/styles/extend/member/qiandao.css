@@ -1,0 +1,41 @@
+.box{
+	padding: 10px 10px;
+	background:#ffffff;
+
+}
+.margin{
+	margin-top:10px;
+}
+.bordertop{
+	border-top:1px solid #eeeeee;
+}
+.box span{
+	float: right;
+	color: #FF6600;
+}
+.qdlist-logo{
+	float: left;
+	width:24.6%;
+	padding: 10px 0;
+	text-align: center;
+	background:#ffffff;
+	border-left:1px solid #eeeeee;
+	color: #666666;
+	font-size:12px;
+	line-height: 22px;
+	border-bottom: 1px solid #eeeeee;
+}
+.qdlist{
+	background:#ffffff;
+	width: 100%;
+}
+.button{
+	margin:10px auto;
+	width:90%;
+	border-radius: 5px;
+	background: #FF6600;
+	padding:10px 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12PX;
+}

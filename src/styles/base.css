@@ -1,0 +1,147 @@
+*{
+	padding: 0;
+	margin:0;
+
+}
+body{
+	padding: 0;
+	margin: 0;
+	background: #F9F8F8;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.footer{
+	background:#ffffff;
+
+	bottom:0px;
+	z-index: 100;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	border-top: 1px solid #eeeeee;
+}
+.footer img{
+	width:20px;
+	height: 20px;
+}
+.footlogo{
+
+	width:33.3%;
+	 float: left;
+
+	line-height: 23px;
+	font-size: 12px;
+	text-align: center;
+	padding: 8px 0 2px 0;
+
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.clear{
+	clear: both;
+}
+.box{
+	background:#ffffff;
+	padding:10px 10px;
+
+}
+.box1{
+	background:#ffffff;
+	padding:10px 15px;
+
+}
+.border-top{
+	border-top:1px solid #eeeeee;
+}
+.border-left{
+	border-left:1px solid #eeeeee;
+}
+.border-right{
+	border-right:1px solid #eeeeee;
+}
+.border-bottom{
+	border-bottom:1px solid #eeeeee;
+}
+.floatright{
+	float: right;
+
+}
+.color-a{
+	color:#999999;
+}
+.color-b{
+	color:#FF6600;
+}
+.margintop10{
+	margin-top:10px;
+}
+.sign-red{
+
+	background-image: url('../images/red.png');
+	background-position:bottom right;
+	background-repeat: no-repeat;
+	background-size:30%;
+
+}
+.head{
+	background:#ffffff;
+	padding:12px 0px;
+	font-size: 16px;
+	position: fixed;
+	width: 100%;
+	text-align:center;
+	z-index: 100;
+	border-bottom: 1px solid #eeeeee;
+}
+.eat-list li{
+	background: #ffffff;
+}
+.list-detail li,.am-modal{
+	background: #ffffff;
+
+}
+.paytype{
+
+	background: #ffffff;
+	font-size:12px;
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+}
+.paytype-logo{
+	padding:10px 10px;
+	text-align: center;
+	width: 25%;
+	border-right:1px solid #eeeeee;
+	float: left;
+}
+.paytype-logo p{
+	text-align: center;
+	line-height: 25px;
+}
+/* 四列功能菜单 */
+.gncd{
+margin:20px 0;
+font-size:12px;
+
+border-top:1px solid #eeeeee;
+}
+.gncd img{
+	width:28px;
+	height:28px;
+}
+.gncd-logo{
+	float:left;
+	padding:10px 0px;
+	height: 45px;
+	text-align: center;
+	background:#ffffff;
+	width:24.75%;
+	border-bottom: 1px solid #eeeeee;
+	border-right:1px solid #eeeeee;
+
+}
+.noborder-r{
+
+	border-right:0px solid #eeeeee;
+}

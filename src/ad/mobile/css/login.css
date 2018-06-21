@@ -1,0 +1,41 @@
+body{
+  padding-bottom: 49px;
+font-family: "Helvetica Neue",Helvetica,Arial,'Microsoft YaHei',sans-serif;
+background: url(../images/bg.gif) repeat;
+font-size: 14px;
+}
+.head{
+  text-align: center;
+}
+.head .p1{
+  color:#FF6666;
+  font-size: 50px;
+  line-height: 0px;
+  padding-top:30px;
+}
+.head .p2{
+  color: #666666;
+}
+.than{
+  text-align: center;
+  margin-top:40px;
+  line-height: 30px;
+}
+.than p{
+  margin-top: 20px;
+}
+.than input{
+
+  width:80%;
+  height: 40px;
+  border:1px solid #999;
+  border-radius: 4px;
+  padding:0 10px;
+}
+.than .btn{
+
+  background: #778899;
+  width: 87%;
+  color: #ffffff;
+  font-size: 20px;
+}

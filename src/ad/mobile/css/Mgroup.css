@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@charset "UTF-8";
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    -webkit-appearance: none; /*苹果和安卓按钮样式*/
+}
+body {
+    font-family: "Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
+    margin : 0 auto;
+    position: relative;
+}
+img {
+    width: 100%;
+    max-height: 178px;
+    display: block;
+}
+/*灰影清除*/
+a,button,input,textarea,img {
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+header,section,footer{
+    display: block;
+}
+.up{
+    position: absolute;
+    z-index: 999;
+    top: 2rem;
+    left: 4%;
+}
+.up img{
+    width: 40px;
+    opacity:0.5;
+}
+.share{
+    position: absolute;
+    z-index: 999;
+    top: 2rem;
+    right: 4%;
+}
+.share img{
+    width: 40px;
+    opacity:0.5;
+}
+.container{
+    max-width: 640px;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #eeeeee;
+    margin: 0 auto;
+}
+figure{
+    margin-top: 2rem;
+    background-color: white;
+    position: relative;
+}
+.info{
+    font-size: 1.6rem;
+    padding: 2%;
+    background-color: white;
+}
+.info .p_specialty{
+    text-align: left;
+    text-indent: -1rem;
+}
+.info .p_count{
+    padding-top:2%;
+    color: darkgray;
+    text-align: right;
+}
+.payon{
+    background-image: url("../img/payon.png");
+    background-size: 120px 30px;
+    width: 120px;
+    height: 30px;
+}
+.payon{
+    position: absolute;
+    top:0;
+    right: 2%;
+}
+.payon p{
+    margin-left:3.8rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+.payoff{
+    background-image: url("../img/payoff.png");
+    background-size: 120px 30px;
+    width: 120px;
+    height: 30px;
+}
+.payoff{
+    position: absolute;
+    top:0;
+    right: 2%;
+}
+.payoff p{
+    margin-left:3.8rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+.footer{
+    height: 8rem;
+    background-color: gainsboro;
+    text-align:center ;
+}
+.footer p {
+    color: darkgray;
+    font-size: 1.4rem;
+}
+.wx_nav a:before{
+    background-image:url("../img/opcity.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav a:before{
+    background-image:url("../img/opcity.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav{
+    overflow:hidden;
+    height:48px;
+    border-top:1px solid #ddd;
+    position:fixed;
+    z-index:900;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+.wx_nav a{
+    width:200px;
+    height:49px;
+    color:#999;
+    font-size:12px;
+    background-color:white;
+    text-align:center;
+}
+.wx_nav a:before{
+    width:30px;
+    height:20px;
+    content:'\20';
+    display:block;
+    margin:5px auto 2px auto;
+}
+.wx_nav a:active{
+    background-color:whitesmoke;
+    color:lightseagreen;
+}
+.wx_nav a:active,.wx_nav a.nav_fav{
+    color:lightseagreen;
+}
+.wx_nav a:active:before,.wx_nav a.nav_fav:before{
+    background-image:url("../img/greenicon.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav .nav_index:before{
+    background-position: 5px 0;
+}
+.wx_nav .nav_fav:before{
+    background-position: -103px 0;
+}
+.wx_nav .nav_shopcart:before{
+    background-position: -212px 0;
+}
+.wx_nav .nav_me:before{
+    background-position: -315px 0;
+}
+.wx_nav{
+    display:box;
+    display:-ms-box;
+    display:-webkit-box;
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}
+.wx_nav a{
+    display:block;
+    flex:1;
+    -ms-flex:1;
+    -webkit-flex:1;
+    box-flex:1;
+    -ms-box-flex:1;
+    -webkit-box-flex:1;
+}
+.cancel{
+    position: fixed;
+    width: 100%;
+    top:20%;
+    left: 15%;
+    right: 15%;
+    z-index: 999;
+    display: none;
+}
+.alert{
+    position: relative;
+}
+.img1{
+    width: 70%;
+    height: 170px;
+}
+.text{
+    background-color: white;
+    width: 70%;
+    text-align: center;
+}
+.over{
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.6rem;
+}
+.next{
+    color: red;
+    font-size: 1.4rem;
+    padding: 0  0 2rem 0;
+}
+.img2{
+    position: absolute;
+    top:38%;
+    left: 48%;
+    width: 20%;
+    height: 60px;
+}
+.img3{
+    position: absolute;
+    top:92%;
+    left: 27.5%;
+    width: 15%;
+}
+.theme-popover-mask {
+    z-index: 99;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    display:none
+}

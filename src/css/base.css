@@ -1,0 +1,9 @@
+.backbg{
+	background:url(../images/backbg.png);
+	width:60px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	font-size: 13px;
+	padding-left:20px;
+}

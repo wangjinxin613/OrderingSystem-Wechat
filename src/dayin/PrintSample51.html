@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WEB打印控件LODOP的样例五十一:获得打印原始指令</title>
+
+<script language="javascript" src="LodopFuncs.js"></script>
+</head>
+<body>
+<h2><font color="#009999">演示如何获得打印任务的原始指令</font>
+</h2>
+
+<p>为了向远程HOST网口打印机(参考<a href="PrintSample17.html">样例17</a>的演示四)发送原始指令，你或许需先获得这些指令(有人依照打印手册手工撰写)。</p>
+<p>用如下模式设置可以让<font color="#0000FF">PRINT</font>或<font color="#0000FF">PRINTA</font>语句不再实际打印，而是返回该打印任务的原始指令：</p>
+<p>
+</p>
+
+<p><font color="#0000FF">SET_PRINT_MODE("PRINT_TO_CODES",true);</font></p>
+
+<p>下面演示<font size="2"><input type="button" value="选打印机进行PRINT" onclick="myPrint()">看看返回的结果，同时对比真实的<input type="button" value="打印预览" onclick="myPreview()">：
+<p><textarea rows="40" id="S1" cols="150" >返回的结果值</textarea>
+
+
+<p><a href="PrintSampIndex.html">&lt;&lt;回样例目录</a>
+ </p>     
+
+<script language="javascript" type="text/javascript"> 
+	var LODOP;  
+	function myPrint() {	
+		LODOP=getLodop(); 
+		createOnePage();                
+		LODOP.SET_PRINT_MODE("PRINT_TO_CODES",true);
+		if (LODOP.CVERSION) LODOP.On_Return=function(TaskID,Value){document.getElementById('S1').value=Value;};
+		document.getElementById('S1').value=LODOP.PRINTA();
+	};
+	function myPreview() {	
+		LODOP=getLodop(); 
+		createOnePage();                
+		LODOP.PREVIEW();
+	};
+	function createOnePage(){	
+		LODOP=getLodop();                 
+		LODOP.PRINT_INIT("打印控件功能演示_Lodop功能_获得原始指令");
+		LODOP.ADD_PRINT_TEXT(10,10,200,30,"普通内容");
+		LODOP.ADD_PRINT_HTM(30,10,200,300,"<hr>普通内容<hr>");
+	};
+
+</script> 
+</body>
+</html>

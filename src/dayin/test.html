@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WEB打印控件LODOP的样例三:用程序代码生成打印页</title>
+
+<script language="javascript" src="LodopFuncs.js"></script>
+
+</head>
+
+<textarea rows="15" id="textarea01" cols="80" style="display:none">
+<div style="font-size:12px;line-height: 5px;letter-spacing: 0px">
+  <h3 style="text-align: center;width:100%;padding:5px 0;">秀姐咖啡店网上订餐</h3>
+  <p>订单编号：100050</p>  
+  <p>会员编号：60019</p>  
+  <p>微信：100050</p>
+  <p>电话：10005045454</p>
+  <p>支付状态：已支付</p>
+  <p>下单时间:2016/01/01 15:00:00</p>
+  <HR>
+    <table style="letter-spacing: -3px;border:0;display: block;">
+      <tr>
+        <td width="46%">商品</td>
+        <td  width="18%">单价</td>
+        <td width="18%">数量</td>
+        <td  width="18%">金额</td>
+      </tr>
+      <tr>
+        <td>骨肉相连</td>
+        <td>5.0</td>
+        <td>2</td>
+        <td>10.0</td>
+      </tr>
+       <tr>
+        <td>骨肉相连一大串</td>
+        <td>5.0</td>
+        <td>2</td>
+        <td>10.0</td>
+      </tr>
+    </table>
+  
+  <p>备注：骨肉相微辣</p>
+  <HR>
+  <p style="float:right">合计：20.0元</p>
+  <div style="clear:both"></div>
+  <br>
+
+  <p style="text-align: center;">谢谢惠顾，欢迎您的光临</p>
+</div>
+</textarea>   
+<body style="zoom:1;font-family:'adobe-clean',sans-serif">
+
+<a href="javascript:myPrint()"><b>直接打印</b></a> 
+<a href="javascript:myPreview()"><b>打印预览</b></a>
+<a href="javascript:myPrintA()"><b>选择打印机</b></a>
+<a href="javascript:mySetup()"><b>打印维护</b></a>
+<a href="javascript:myDesign()"><b>打印设计</b></a>
+</body>
+<script language="javascript" type="text/javascript">        
+        var LODOP; //声明为全局变量       
+	function myPrint() {		       
+		CreatePrintPage();       
+		LODOP.PRINT();		       
+	};         
+	function myPrintA() {		       
+		CreatePrintPage();       
+		LODOP.PRINTA();		       
+	};  	       
+	function myPreview() {		       
+		CreatePrintPage();       
+		LODOP.PREVIEW();		       
+	};		       
+	function mySetup() {		       
+		CreatePrintPage();       
+		LODOP.PRINT_SETUP();		       
+	};	       
+	function myDesign() {		       
+		CreatePrintPage();       
+		LODOP.PRINT_DESIGN();		       
+	};	       
+	function myBlankDesign() {       
+		LODOP=getLodop();         
+   		LODOP.PRINT_INIT("打印控件功能演示_Lodop功能_空白练习");		       
+		LODOP.PRINT_DESIGN();		       
+	};		
+
+	function CreatePrintPage() {       
+		        
+ 
+		  LODOP=getLodop();         
+   		LODOP.PRINT_INIT("");		            
+		LODOP.ADD_PRINT_HTM(10,10,"100%","100%",document.getElementById("textarea01").value);	   
+	};       
+     
+</script>  
+</html>

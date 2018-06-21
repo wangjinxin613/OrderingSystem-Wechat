@@ -1,0 +1,20 @@
+.tab{
+	width:100%;
+	background: #ffffff;
+}
+.tab td,th{
+	padding: 5px 0;
+	border-bottom: 1px solid #eeeeee;
+
+}
+table{
+	width: 100%;
+	text-align: center;
+
+}
+.td1{
+	width:25%;
+}
+.td2{
+	width: 28%;
+}

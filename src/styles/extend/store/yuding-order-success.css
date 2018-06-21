@@ -1,0 +1,28 @@
+.font p{
+	margin:10px 5%;
+	width:90%;
+	font-size: 20px;
+	text-align: center;
+}
+.btn{
+	background:#FF6666;
+	padding:10px 0;
+	width:90%;
+	margin:30px 5%;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
+}
+.btn1{
+	background:#ffffff;
+	padding:10px 0;
+	width:90%;
+	margin:0px 5%;
+	text-align: center;
+	color: #FF6666;
+	border:1px solid #FF6666;
+	border-radius: 5px;
+}
+body{
+	background: #ffffff;
+}

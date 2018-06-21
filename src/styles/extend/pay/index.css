@@ -1,0 +1,28 @@
+.money .p1{
+	padding:5px 15px;
+	color:#666666;
+}
+.money{
+  width: 100%;
+}
+.money input{
+	width:100%;
+	border-left:0;
+	border-right:0;
+	outline: none;
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+	padding:10px 0px;
+  text-align: center;
+}
+.btn{
+	padding:10px 0;
+	width:90%;
+	border-radius: 5px;
+	margin:20px 5%;
+	border:0;
+	text-align: center;
+	color: #ffffff;
+	background: #FF0033;
+
+}

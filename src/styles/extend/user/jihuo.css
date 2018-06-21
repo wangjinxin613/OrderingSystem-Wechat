@@ -1,0 +1,37 @@
+.jh-head p{
+	padding:10px 15px;
+	color:#666666;
+}
+.jh-body{
+	background:#ffffff;
+
+}
+.jh-body p{
+	padding:10px 0px;
+	margin-left:15px;
+	border-bottom: 1px solid #eeeeee;
+}
+.jh-body input{
+	width:70%;
+	outline: none;
+	border:0;
+}
+.jh-body .inp1{
+	margin-left:35px;
+}
+.jh-body .inp2{
+	margin-left:22px;
+}
+
+.jh-bt{
+	width:90%;
+	margin-left:5%;
+	text-align: center;
+	color: #ffffff;
+	border:0;
+	outline: none;
+	padding:10px 0;
+	background: #CC3333;
+	margin-top: 20px;
+	border-radius: 5px;
+}

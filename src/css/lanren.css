@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.demo {
+	width:auto;
+	margin:0 auto;
+}
+.stamp * {
+	padding: 0;
+	margin: 0;
+	list-style:none;
+	font-family:"Microsoft YaHei", 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+}
+.stamp {
+	width: 94%;
+	height: 140px;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.stamp:before {
+	content: '';
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:10px;
+	right:10px;
+	z-index: -1;
+}
+.stamp i {
+	position: absolute;
+	left: 20%;
+	top: 45px;
+	height: 190px;
+	width: 390px;
+	background-color: rgba(255, 255, 255, .15);
+	transform: rotate(-30deg);
+}
+.stamp .par {
+	float: left;
+	padding: 16px 15px;
+	width: 48%;
+	border-right:2px dashed rgba(255, 255, 255, .3);
+	text-align: left;
+}
+.stamp .par p {
+	color:#fff;
+	font-size: 16px;
+	line-height: 21px;
+}
+.stamp .par span {
+	font-size: 40px;
+	color:#fff;
+	margin-right: 5px;
+	line-height: 65px;
+}
+.stamp .par .sign {
+	font-size: 34px;
+}
+.stamp .par sub {
+	position: relative;
+	top:-5px;
+	color:rgba(255, 255, 255, .8);
+}
+.stamp .copy {
+	display: inline-block;
+	padding:21px 14px;
+	width:30%;
+	vertical-align: text-bottom;
+	font-size: 30px;
+	color:rgb(255,255,255);
+	text-align: center;
+	line-height: initial;
+}
+.stamp .copy p {
+	font-size: 16px;
+	margin-top: 15px;
+}
+.stamp01 {
+	
+	background-size: 15px 15px;
+	background-position: 9px 3px;
+}
+.stamp01:before {
+	background-color:#F39B00;
+}
+.stamp02 {
+	
+	background-size: 15px 15px;
+	background-position: 9px 3px;
+}
+.stamp02:before {
+	background-color:#D24161;
+}
+
+.stamp03:before {
+	background-color:#7EAB1E;
+}
+
+.stamp04:before{
+	
+	background-color:#FF6600;
+	
+}

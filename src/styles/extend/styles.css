@@ -1,0 +1,119 @@
+/*图片轮播*/
+
+.focus{
+	
+	margin-left: -10px;
+ 	position:relative; 
+	overflow:hidden;
+	
+}
+.images{
+	height:240px;  
+	overflow:hidden; 
+	position:relative;
+}
+.images .item{
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width: 100%;
+	height:240px; 
+	overflow:hidden; 
+	opacity:0; 
+	transition:opacity 0.8s linear; 
+	-webkit-transition:opacity 0.8s linear;}
+.images .item img{
+	width: 100%;
+	height: 240px;
+}
+.images .active{
+	opacity:1;
+}
+.control{
+	position:absolute; 
+	bottom:20px; 
+	width:100%; 
+	text-align:center;
+}
+.control span{
+	display:inline-block; 
+	cursor:pointer; 
+	background:#ffffff; 
+	
+	width:8px; 
+	height:8px; 
+	text-align:center; 
+	line-height:10px; 
+	border-radius:25px; 
+	margin:0 8px;
+}
+.control span.active{
+	background:#FF0033;
+}
+/* 轮播图结束  门店选择*/
+.mdxz{
+	background:#ffffff;
+	margin-top: 8px;
+	padding: 10px 10px;
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+}
+.gg{
+	background:#ffffff;
+	margin-top: 8PX;
+	padding: 10PX 10PX;
+	padding-bottom: 10px;
+	border-top:1PX solid #eeeeee;
+	border-bottom:1PX solid #eeeeee;
+
+}
+.gg .span1{
+	background:#FF0033;
+	width:10px;
+	height:30px;
+}
+.gg .p1{
+	padding-bottom: 8px;
+	border-bottom: 1px solid #eeeeee;
+}
+.gg .title{
+	margin-top:10px;
+}
+.gg .text{
+	margin-top: 5px;
+	font-size: 12px;
+	color: #999999;
+}
+.gnlist{
+	font-size:12px;
+	background:#ffffff;
+	margin:10px 0px;
+	border-top: 1px solid #eeeeee;
+
+}
+.gnlist img{
+	width:30px;
+	height: 30px;
+
+}
+.gnlogo {
+	border-bottom:1px solid #eeeeee;
+	border-left:1px solid #eeeeee;
+	width:24.64%;
+	 display:block;
+	float: left;
+	
+	padding: 10px 0;
+	background:#ffffff;
+}
+.gnlogo:hover{
+	background: #cccccc;
+}
+.gnlogo p{
+	text-align: center;
+	line-height: 16px;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}

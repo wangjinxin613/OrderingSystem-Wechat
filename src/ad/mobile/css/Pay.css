@@ -1,0 +1,453 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+body{
+    position: relative;
+}
+.body{
+    font-family:"Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
+    margin: 0 auto;
+
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+
+}
+a,img,button,input,textarea {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+.tour{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+.tour1{
+    position: absolute;
+    top:1rem;
+    left: 2%;
+}
+.tour p{
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.8rem;
+}
+.header3{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+}
+.header3 a{
+    line-height: 5rem;
+    padding: 0 5% 0 5%;
+    display:block;
+    float: left;
+}
+.header3 .btn1{
+    font-size: 1.3rem;
+    height:3rem;
+    width: 6rem;
+    color: green;
+    background-color: #ffffff;
+    border:1px solid green;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+}
+.header3 .btn2{
+    font-size: 1.3rem;
+    height:3rem;
+    width: 6rem;
+    color: #000000;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+}
+.address{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+.address .daohang{
+    position: absolute;
+    left: 1rem;
+    top:0.5rem;
+}
+.address .caizhu{
+    position: absolute;
+    left: 5rem;
+    top:1rem;
+    font-size: 1.3rem;
+}
+.caizhu .person{
+    margin-top: -0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.caizhu .diqiu{
+    margin-top: -1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.diqiu{
+    margin-top: -1rem;
+}
+.address .xdz{
+    position: absolute;
+    right:1.5rem;
+    top:1.5rem;
+    font-size: 2rem;
+}
+.address2{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    display: none;
+}
+.address2 .daohang{
+    position: absolute;
+    left: 1rem;
+    top:0.5rem;
+}
+.address2 .caizhu{
+    position: absolute;
+    left: 5rem;
+    top:1rem;
+    font-size: 1.3rem;
+}
+.caizhu .store{
+    margin-top: -0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.caizhu .saddress{
+    margin-top: -1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.address2 .xdz{
+    display: none;
+    position: absolute;
+    right:1.5rem;
+    top:1.5rem;
+    font-size: 2rem;
+}
+.diqiu{
+    margin-top: -1rem;
+}
+.address .xdz{
+    position: absolute;
+    right:1.5rem;
+    top:1.5rem;
+    font-size: 2rem;
+}
+.zfdd,.yunfei,.sjly{
+    border-bottom: 1px solid #dcdcdc;
+}
+.zfdd ul{
+    width: 100%;
+    height: 70px;
+}
+.zfdd ul li {
+    display: block;
+    float: left;
+}
+.li1{
+    margin-top: 0.5rem;
+    width: 10%;
+    text-align: center;
+}
+.li1 img{
+    margin-left: 1.5rem;
+    border: 1px solid #dcdcdc;
+    padding: 0.1rem;
+}
+.li2{
+    width: 60%;
+    font-size: 1.3rem;
+    line-height: 70px;
+    text-align: center;
+}
+.li3{
+    width: 26%;
+    font-size: 1.3rem;
+    line-height: 35px;
+    text-align: right;
+}
+.yunfei ul{
+    width: 100%;
+    height: 3rem;
+}
+.yunfei ul li{
+    float: left;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    width: 50%;
+}
+.yunfei ul .yunli{
+    text-align: left;
+    padding-left:1.5rem;
+}
+.yunfei ul .qianli{
+    text-align: right;
+    padding-right:1.5rem;
+}
+.sjly{
+    height: 4rem;
+  text-align: center;
+}
+.sjly input{
+    width: 90%;
+    height: 3rem;
+    margin: 0.5rem 0 0 0rem;
+    border-radius: 5px;
+    border:1px solid #dcdcdc;
+    outline: none;
+    font-size: 1.3rem;
+}
+.zjfy{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+.fy{
+    position: absolute;
+    right: 1.5rem;
+    top:2rem;
+}
+.fy p{
+    font-size: 1.6rem;
+    color: red;
+}
+.footing{
+    width: 100%;
+    height: 8rem;
+    border-top: 1px solid #000000;
+    position: fixed;
+    bottom:0;
+    background-color: #ffffff;
+}
+.footing ul{
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    top:2rem
+}
+.footing ul li{
+    display: block;
+    float: left;
+}
+.li6{
+    padding-top: 0.3rem;
+    white-space: nowrap;
+    width: 60%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+}
+.li7{
+    width: 40%;
+    padding-right: 1.3rem;
+    line-height: 4rem;
+}
+.li7 button{
+    white-space: nowrap;
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 4rem;
+    background-color: green;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+.menu ul{
+	padding-top:1rem;
+    padding-bottom:1rem;
+}
+.menu ul li{
+
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+}
+.menu ul  a{
+    line-height: 3rem;
+    margin-top: 1rem;
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    border: 1px solid #898989;
+}
+.menu ul .aclass{
+    color: green;
+    border: 1px solid green;
+}
+.changeadd{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    z-index: 444;
+    display: none;
+}
+.shdz{
+    height: 5rem;
+}
+.shdz p{
+    border-top:1px solid #979797 ;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border-bottom: 1px solid #979797;
+}
+.shdz .gbdd {
+    text-align: right;
+    margin-right: 1.5rem;
+    margin-top: -3rem;
+}
+.shdz .gbdd span{
+  	   display: block;
+    font-size: 3rem;
+   margin-top: -3.8rem;
+}
+.dzlb{
+    border-bottom: 1px solid #979797;
+}
+.harvest{
+	margin-left:1.5rem;
+	font-size:1.3rem;
+}
+.harvest .person{
+    margin-top: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.harvest .diqiu{
+    margin-top: -1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+hr{
+	border:none;
+}
+.gldz{
+    width: 100%;
+}
+.gldz li{
+    float: left;
+}
+.gldz .li10{
+    margin-left: 1.5rem;
+    margin-top: 1.3rem;
+	font-size: 1.6rem;
+}
+.gldz .li11{
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 4.5rem;
+}
+.gldz .li12{
+    float: right;
+    line-height: 4rem;
+    margin-right: 1.5rem;
+}
+.gldz .li12 button{
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    line-height: 4rem;
+    font-size: 2rem;
+}
+.zjdd{
+    position: fixed;
+    bottom: 0;
+    z-index: 888;
+    width: 100%;
+    height: 20rem;
+    background-color: #ffffff;
+    display: none;
+}
+.sfxx table{
+    width: 100%;
+    height: 10rem;
+    margin: 0 auto;
+}
+.sfxx table td {
+    font-size: 1.3rem;
+   border: 1px solid #dcdcdc;
+}
+.sfxx table .td1 {
+  text-align: center;
+}
+.sfxx table tr td input{
+    font-size: 1.3rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.bc{
+    width: 100%;
+    margin-top: 1rem;
+   text-align: center;
+}
+.theme-popover-mask {
+    z-index: 99;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    display:none
+}
+.bc button{
+    height: 3rem;
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid green;
+    outline: none;
+}
+

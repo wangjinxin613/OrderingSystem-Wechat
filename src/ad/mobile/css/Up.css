@@ -1,0 +1,40 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+    -webkit-appearance:none;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.body{
+    font-family:"Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+a,img,button,input,textarea{
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.actGotop {
+    position: fixed;
+    bottom: 8rem;
+    right: 4%;
+    display: none;
+}
+.actGotop img{
+    width: 40px;
+}

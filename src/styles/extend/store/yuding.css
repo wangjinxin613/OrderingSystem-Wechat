@@ -1,0 +1,40 @@
+.head1 p{
+	width: 100%;
+
+
+}
+.head1{
+	background: #FFFFCC;
+	padding:12px 0 0 0;
+
+}
+.flower{
+	margin:15px 0;
+	background:#ffffff;
+	border-top:1px solid #eeeeee;
+}	
+.flower-logo{
+	padding:10px 15px 10px 15px;
+	border-bottom: 1px solid #eeeeee;
+}
+.flower-logo span{
+	float: right;
+	color: #999999;
+}
+.flower-logo .inp1{
+	padding:5px 8px;
+	background:#ffffff;
+	outline: none;
+	border:1px solid #cccccc;
+	border-radius: 5px;
+	margin:10px 10px;
+}
+.flower-logo .inp1:hover{
+	border-color: red;
+
+}
+.margin-left{
+	
+
+}
+

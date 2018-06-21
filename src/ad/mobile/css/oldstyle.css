@@ -1,0 +1,248 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+    -webkit-appearance:none;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.body{
+    font-family:"Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
+margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+a,img,button,input,textarea{
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+.allLogo{
+    position: relative;
+}
+.logo1{
+    margin: 0 auto;
+    max-width:640px;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.dztx{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom:1%;
+    left: 5%;
+    z-index:999;
+}
+.beijing{
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.qbsp{
+    position: absolute;
+    bottom:0;
+    left: 41%;
+    z-index:99;
+}
+.qbsp .sps{
+     display: block;
+     text-align: center;
+     font-size: 1.8rem;
+     margin-top: 1.5rem;
+ }
+.qbsp .all{
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -1rem;
+}
+.shopping{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    bottom:0;
+    right: 5%;
+    z-index:98;
+}
+.shopping img{
+    margin: 0 auto;
+}
+.shopping a{
+    display: block;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    text-align: center;
+}
+.zsh{
+   position: relative;
+    height: 55px;
+    border: 1px solid #dcdcdc;
+}
+.zsh .zshjj{
+    	font-size: 1.3rem;
+     position: absolute;
+     top:1rem;
+     padding-left: 1%;
+}
+.zsh .zshlj{
+    position: absolute;
+    right: 5%;
+    line-height: 55px;
+}
+.zsh .zshlj .btn{
+    height: 30px;
+    width: 6rem;
+    font-size: 1.3rem;
+    color: green;
+    background-color: #ffffff;
+    border:1px solid green;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+}
+.allsp{
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+figure{
+    width: 42%;
+    float: left;
+    border: 1px solid #b4b4b4;
+    margin:0 4% 2rem 4%;
+}
+figure img{
+    border-radius: 0.1rem;
+}
+figure p {
+    padding-top:0.5rem;
+    font-size:1.4rem;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:left;
+    padding-left: 2%;
+}
+figure div em{
+	display:inline-block;
+	margin-top:8%;
+    font-style: normal;
+    font-size:1.6rem;
+    color: red;
+    padding-left: 2%;
+}
+.xlgd{
+    width: 100%;
+    height: 3rem;
+    background-color: #f2f2f2;
+}
+.xlgd p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.zshlogo{
+    width: 100%;
+    height: 13rem;
+}
+.zshlogo a img{
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+.zshlogo p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.wx_nav a:before{
+    background-image:url("../img/opcity.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav{
+    overflow:hidden;
+    height:48px;
+    border-top:1px solid #ddd;
+    position:fixed;
+    z-index:900;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+.wx_nav a{
+    width:200px;
+    height:49px;
+    color:#999;
+    font-size:12px;
+    background-color:white;
+    text-align:center;
+}
+.wx_nav a:before{
+    width:30px;
+    height:20px;
+    content:'\20';
+    display:block;
+    margin:5px auto 2px auto;
+}
+.wx_nav a:active{
+    background-color:whitesmoke;
+    color:lightseagreen;
+}
+.wx_nav a:active,.wx_nav a.nav_index{
+    color:lightseagreen;
+}
+.wx_nav a:active:before,.wx_nav a.nav_index:before{
+    background-image:url("../img/greenicon.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav .nav_index:before{
+    background-position: 5px 0;
+}
+.wx_nav .nav_fav:before{
+    background-position: -103px 0;
+}
+.wx_nav .nav_shopcart:before{
+    background-position: -212px 0;
+}
+.wx_nav .nav_me:before{
+    background-position: -315px 0;
+}
+.wx_nav{
+    display:box;
+    display:-ms-box;
+    display:-webkit-box;
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}
+.wx_nav a{
+    display:block;
+    flex:1;
+    -ms-flex:1;
+    -webkit-flex:1;
+    box-flex:1;
+    -ms-box-flex:1;
+    -webkit-box-flex:1;
+}

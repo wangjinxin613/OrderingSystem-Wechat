@@ -1,0 +1,23 @@
+.list{
+  width:94%;
+  margin:20px auto;
+  background:#ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px #eeeeee;
+}
+.list_img{
+  border-radius: 10px 10px 0 0;
+  background: url('../../images/store_list_bg.jpg');
+  height:150px;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+}
+.list_img p{
+  padding-top:56px;
+}
+.p1{
+  padding:3px 10px;
+  color:#666666;
+}

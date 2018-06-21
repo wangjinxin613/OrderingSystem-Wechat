@@ -1,0 +1,330 @@
+.body{
+  padding:0;
+  margin:0;
+}
+.nav{
+  margin:30px 10px;
+}
+.nav li{
+  float:left;
+  padding:10px 20px;
+}
+.detail{
+  margin-top:-20px;
+}
+.single img{
+
+  border:1px solid #eeeeee;
+  width: 180px;
+  height:180px;
+}
+.single{
+  margin:20px 0px 0 30px;
+  float: left;
+  width:200px;
+}
+.single img:hover{
+  border-color: #ef0606;
+}
+.single .p1{
+  font-size:16px;
+  color:#666666;
+  margin-top: 5px;
+  width:200px;
+  overflow: hidden;
+  height:23px;
+}
+.single p{
+  width:200px;
+  overflow: hidden;
+}
+.single del{
+  color:#999999;
+  font-size:14px;
+}
+.single span{
+
+  font-size:15px;
+  color:#f5023a;
+  font-weight: 600;
+}
+.de_head{
+  margin:20px 30px;
+}
+.de_head .fr_left{
+  width: 35%;
+  float: left;
+  text-align: center;
+  border:1px solid #eeeeee;
+}
+.fr_left img{
+  width:300px;
+  height:300px;
+}
+.de_head .fr_right{
+  float:left;
+  width:55%;
+  margin:5px 30px;
+  overflow-x: hidden;
+}
+.fr_right p{
+  line-height: 30px;
+}
+.fr_right .p1{
+  font-size:20px;
+
+}
+.fr_right .p2{
+  font-size:14px;
+  color:#666666;
+}
+.fr_right .p3{
+  color:#e80f7b;
+  font-size:18px;
+  font-weight:600;
+}
+.fr_right del{
+  margin-left:10px;
+  color:#999999;
+  font-size: 14px;
+  font-weight:400;
+}
+.bor{
+  border-top:1px solid #eeeeee;
+  margin-top:10px;
+}
+.fr_right .s1{
+  float:right;
+  font-size: 14px;
+  color:#666666;
+  font-weight: 200;
+}.fr_right .p4{
+  margin-top:10px;
+  font-size:16px;
+}
+.fr_right .p5{
+  border:1px solid #ddd;
+  border-radius: 3px;
+  float: left;
+line-height: 30px;
+margin-top:10px;
+}
+
+.show1{
+  float: left;
+width: 30px;
+text-align: center;
+cursor: pointer;
+}
+.num{
+  float: left;
+width: 60px;
+border:0px;
+height: 30px;
+text-align: center;
+border-left: 1px #ddd solid;
+border-right: 1px #ddd solid;
+background:#ffffff;
+}
+.show2{
+  float: left;
+width: 30px;
+text-align: center;
+cursor: pointer;
+
+
+}
+.ljgm{
+  margin-top:70px;
+}
+.ljgm button{
+  border:0;
+  color:#FFFFFF;
+  padding:8px 20px;
+  background:#ee4848;
+}
+.de_next{
+  width:93%;
+}
+.de_bor{
+  font-size:16px;
+  color:#666666;
+  padding:10px 10px;
+
+  border-bottom:1px solid #eeeeee;
+}
+.bo{
+  margin:20px 10px;
+  font-size:18px;
+  color:#999999;
+  line-height: 30px;
+
+}
+/**
+ * 确认订单页面
+ */
+.or_head{
+  font-size:18px;
+  color:#666666;
+  padding:5px 0;
+  font-weight: 600;
+  border-bottom: 2px solid #ef113d;
+}
+.or_all{
+  margin:10px 30px;
+}
+.or_sh1{
+  background:url('../images/line1.gif');
+  background-repeat: repeat-x;
+  background-position: top;
+
+}
+.or_sh .in{
+  margin:0;
+  margin:15px 30px;
+
+}
+.or_sh input{
+  border:0;
+  font-size:18px;
+  color:#666666;
+  margin:15px 30px;
+  background: #ffffff;
+}
+.or_ps{
+
+}
+.or_ps .p1{
+  font-size:15px;
+  color:#666666;
+  font-weight: 800;
+  padding:5px 0;
+  border-bottom:1px solid #eeeeee;
+}
+.or_ps .p2{
+  margin-top:15px;
+}
+.or_ps .p2 span{
+  margin-top:60px;
+  padding:5px 12px;
+  margin-left:15px;
+  color:#FFFFFF;
+  background:#999999;
+}
+.or_ps .p2 span:hover{
+  background:#e4393c;
+}
+.or_ps .p2 .active{
+  background:#e4393c;
+}
+.or_de{
+    border-bottom: 1px solid #eeeeee;
+
+}
+.de_single{
+  width:100px;
+  border:1px solid #eeeeee;
+  margin:10px 10px;
+  height:100px;
+  float:left;
+}
+.de_single img{
+  width:100px;
+
+  height:100px;
+
+}
+.de_right{
+  float: left;
+  margin:10px 10px;
+
+}
+.de_right .p1{
+  font-size:18px;
+  color:#666666;
+}
+.de_right .p2{
+  margin-top:30px;
+  font-size: 17px;
+  color:#f30424;
+  font-weight: 600;
+}
+.de_right span{
+  margin-left:200px;
+  font-size:15px;
+  color:#000;
+  font-weight: 400;
+}
+.beizhu{
+  padding: 5px 5px;
+  border:1px solid #eeeeee;
+  width: 99%;
+  height:80px;
+  font-size: 16px;
+  margin-top:20px;
+}
+.btn{
+
+  margin-top:10px;
+  border:1px solid #eeeeee;
+  text-align: right;
+  font-size:16px;
+
+}
+.btn .s1{
+  background:#e20748;
+  padding:11px 10px;
+    color:#ffffff;
+    border:0;
+}
+.or_ps .p3{
+    text-align: right;
+    margin-top: 10px;
+}
+.or_ps .p3 span{
+  padding-left:30px;
+}
+.sin_box{
+  border:1px solid #eeeeee;
+  margin:30px 10px;
+  width:20%;
+  height: 150px;
+  float: left;
+}
+.sin_box .p1{
+  padding:15px 0 0 10px ;
+  color:#333333;
+  font-weight: 600;
+}
+.sin_box .p2{
+  padding:0 10px;
+  color:#666666;
+}
+.sin_than{
+  margin:15px 0px;
+}
+.sin_box .p3{
+  padding-bottom:10px;
+  text-align: right;
+}
+.sin_box .p3 a{
+  margin-right:15px;
+  color:#e82f06;
+
+}
+.ad_biao p{
+  margin:20px 5px;
+  font-size:18px;
+  color:#666666;
+}
+.ad_biao input{
+  width:300px;
+  margin-left:5px;
+}
+.ad_btn{
+
+  background: #fb0b0b;
+  color:#ffffff;
+  padding:5px 0;
+  border:0;
+}

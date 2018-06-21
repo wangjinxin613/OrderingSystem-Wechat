@@ -1,0 +1,256 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+    -webkit-appearance:none;
+}
+a {
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+a,img,button,input,textarea {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+body{
+    background-color: #f8f8f8;
+}
+.body{
+    font-family:"Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
+margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.tour{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+.tour1{
+    position: absolute;
+    top:1rem;
+    left: 2%;
+}
+.tour p{
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.8rem;
+}
+.header3{
+    width: 100%;
+    height: 7rem;
+    background-color: #ffffff;
+}
+.succeed{
+    padding-top: 1rem;
+    text-align: center;
+}
+.succeed li p{
+    margin-top: -4rem;
+    padding-left: 14rem;
+    font-weight:bold;
+    font-size: 1.8rem;
+}
+.spmc{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+}
+.spmc p{
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 5rem;
+}
+.ewm{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #000000;
+}
+.ewm ul{
+    height: 5rem;
+}
+.ewm ul .li1{
+    width: 50%;
+    line-height: 5rem;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+    float: left;
+    white-space: nowrap;
+}
+.ewm ul .li2{
+    float: right;
+    margin-right: 1.5rem;
+    padding-top: 0.3rem;
+}
+.ckdd{
+    width: 30rem;
+    margin:0 auto;
+    height: 8rem;
+}
+.ckdd a{
+    display: block;
+    text-align: center;
+}
+.ckdd a button{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    outline: none;
+    color: green;
+    background-color: #ffffff;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.wxts{
+    width: 92%;
+    margin: 0 4% 0 4%;
+    background-color: #efefef;
+}
+.neirong{
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.neirong p {
+    font-size: 1.2rem;
+    padding: 0.5rem 0 0.5rem 0;
+    letter-spacing: 0.05rem;
+}
+.kefu{
+    margin-top: 5rem;
+    width: 100%;
+    height: 8rem;
+}
+.kefu p{
+    padding: 1rem 0 0 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+.zshlogo{
+    width: 100%;
+    height: 13rem;
+}
+.zshlogo a img{
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+.zshlogo p{
+	margin-top:-1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.wx_nav a:before{
+    background-image:url("../img/opcity.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav{
+    overflow:hidden;
+    height:48px;
+    border-top:1px solid #ddd;
+    position:fixed;
+    z-index:900;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+.wx_nav a{
+    width:200px;
+    height:49px;
+    color:#999;
+    font-size:12px;
+    background-color:white;
+    text-align:center;
+}
+.wx_nav a:before{
+    width:30px;
+    height:20px;
+    content:'\20';
+    display:block;
+    margin:5px auto 2px auto;
+}
+.wx_nav a:active{
+    background-color:whitesmoke;
+    color:lightseagreen;
+}
+.wx_nav a:active,.wx_nav a.nav_me{
+    color:lightseagreen;
+}
+.wx_nav a:active:before,.wx_nav a.nav_me:before{
+    background-image:url("../img/greenicon.png");
+    background-repeat:no-repeat;
+    background-size:340px 20px;
+    -webkit-background-size:340px 20px;
+}
+.wx_nav .nav_index:before{
+    background-position: 5px 0;
+}
+.wx_nav .nav_fav:before{
+    background-position: -103px 0;
+}
+.wx_nav .nav_shopcart:before{
+    background-position: -212px 0;
+}
+.wx_nav .nav_me:before{
+    background-position: -315px 0;
+}
+.wx_nav{
+    display:box;
+    display:-ms-box;
+    display:-webkit-box;
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}
+.wx_nav a{
+    display:block;
+    flex:1;
+    -ms-flex:1;
+    -webkit-flex:1;
+    box-flex:1;
+    -ms-box-flex:1;
+    -webkit-box-flex:1;
+}
+.dewm{
+    display: none;
+    z-index: 222;
+    background-color: #ffffff;
+    position: absolute;
+    width: 50%;
+    height: 15rem;
+    top:10rem;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.theme-popover-mask {
+    z-index: 99;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    display:none
+}

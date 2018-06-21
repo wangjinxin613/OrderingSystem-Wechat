@@ -1,0 +1,104 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    cursor:default;
+    -webkit-appearance:none;
+}
+a {
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+a,img,button,input,textarea {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+body{
+    overflow: hidden;
+    background-color: #000000;
+}
+.body{
+    font-family:"Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
+margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.dlbg .dl{
+    width: 100%;
+    height: 35rem;
+    background-color: #ffffff;
+    position: absolute;
+    top:10rem;
+}
+.dl p{
+    margin: 1.5rem 6% 1.5rem 6%;
+    width: 88%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #000000;
+}
+.dl .srk{
+    text-align: center;
+}
+.dl .srk .input1{
+    margin: 1.5rem 6% 1.5rem 6%;
+    width: 88%;
+    height: 3rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid #dcdcdc;
+}
+.dl .srk .input2{
+    margin: 1.5rem 0 1.5rem 0;
+    width: 40%;
+    margin-right: 8%;
+    height: 3rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid #dcdcdc;
+}
+.dl .srk .input3{
+    margin: 1.5rem 0 1.5rem 0;
+    width: 40%;
+    height: 3rem;
+    font-size: 1.4rem;
+    outline: none;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+}
+.dl .srk button{
+    margin: 1.5rem 6% 1.5rem 6%;
+    width: 88%;
+    height: 3rem;
+    font-size: 1.4rem;
+    background-color: green;
+    outline: none;
+    color: #ffffff;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+.beizhu{
+    width: 100%;
+    margin-top: 2rem;
+}
+.beizhu li{
+    float: right;
+    padding-right: 6%;
+    white-space: nowrap;
+}

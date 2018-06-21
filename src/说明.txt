@@ -1,0 +1,29 @@
+说明
+index.php-首页文件
+
+
+后台目录
+Products_List.php 商品列表
+picture-add.php 添加商品
+
+功能添加
+有新订单 后台系统有提示音
+个人中心模仿旧系统
+个人中心页面图标不清晰，重新切一个清晰地或者换一套图标
+
+if(ctype_digit($oid)== false){ //检测传递过来的参数必须是数字，防止被黑客攻击
+    exit('<script>alert(\'参数传递有误！！\');history.back();</script>');
+}
+
+  exit('<script>alert(\'执行成功！\');window.location.href="../products_sort.php";</script>');
+  	exit('<script>alert(\'您的购物车没有任何商品\');history.back();</script>');
+  $getID=mysql_insert_id();//获取插入数据的id
+
+
+  if(check_dept('1') == false){
+		  exit('<script>alert(\'您没有权限访问本页面\');history.back();</script>');
+	}
+
+  添加数据
+  $sql = "insert into taihao(id,tai_name,shunxu,store_id) values (null,'$tai_name','$shunxu','$user->store_id')";
+  mysql_query($sql);

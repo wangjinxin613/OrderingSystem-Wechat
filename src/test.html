@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf`-8">
+<title>Server-Sent Events</title>
+</head>
+<body>
+<pre id = "x">initializting...</pre>
+<!--之所以使用pre标签而不是p或者div是为了确保数据能以它被接受时的格式呈现,而不会修改或格式化-->
+</body>
+<script>
+var es = new EventSource("test.php");
+es.addEventListener("message", function(e){
+	
+    document.getElementById("x").innerHTML += "\n"+e.data;
+    //alert(e.data);
+},false);//使用false表示在冒泡阶段处理事件,而不是捕获阶段.
+</script>
+</html>
