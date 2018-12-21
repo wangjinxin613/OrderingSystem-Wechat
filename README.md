@@ -33,3 +33,4 @@ http://118.89.46.151/can/ad/login.html
 http://118.89.46.151/can/ad/mobile/index.php 员工收银系统地址
 
 系统功能如下
+ ![image](https://github.com/wangjinxin613/OrderingSystem-Wechat/blob/master/other/functions.png)
