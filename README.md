@@ -34,3 +34,5 @@ http://118.89.46.151/can/ad/mobile/index.php 员工收银系统地址
 
 系统功能如下 (点击可看大图)
  ![image](https://raw.githubusercontent.com/wangjinxin613/OrderingSystem-Wechat/master/other/functions.png)
+
+如遇任何问题，可联系微信 wangjinxin613
